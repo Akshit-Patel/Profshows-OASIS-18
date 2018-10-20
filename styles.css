@@ -335,6 +335,8 @@ a:hover {
 	width:40vw;
 	text-align: center;
 	height:70vh;
+	opacity: 0;
+	transition: 1s;
 }
 #description div:first-child
 {

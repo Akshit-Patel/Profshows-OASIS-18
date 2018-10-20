@@ -135,14 +135,12 @@ function responsiveChange(w)
         document.getElementById("next").src="direction.svg";
         document.getElementById("previous").src="direction.svg";
         addDetails(currentEvent);
-        document.getElementsByTagName("h3")[0].style.opacity=0;
-        document.getElementsByTagName("h4")[0].style.opacity=0;
-            }
+    }
     else
     {
        
         center.style.top="15vh";
-        center.style.left="30vw"
+        center.style.left="30vw";
         center.style.width="30vw";
         center.style.height="30vw";
         right.style.top="30vh";
@@ -172,8 +170,6 @@ function responsiveChange(w)
         document.getElementById("close").style.display="none";
         breifDescription();
         center.addEventListener("click",open);
-        document.getElementsByTagName("h3")[0].style.opacity=1;
-        document.getElementsByTagName("h4")[0].style.opacity=1;
     }
 }
 script.addEventListener("load", function(){
@@ -192,6 +188,26 @@ function keyMove(){
         triggerNext();
     }
 }
+function resize(){
+    if(window.innerWidth <= 500)
+{
+    center.innerHTML="<center><h3 class=\"noSelect\"><br></h3></center>";
+    if(typeof document.getElementsByTagName("h3") !== "undefined" && document.getElementsByTagName("h3") != null)
+     setTimeout(function() {document.getElementsByTagName("h3")[0].style.opacity=1;}, 5);  
+
+     center.innerHTML+="<center><h4><br><br></center>";
+     if(typeof document.getElementsByTagName("h4") !== "undefined" && document.getElementsByTagName("h4") != null)
+     setTimeout(function() {document.getElementsByTagName("h4")[0].style.opacity=1;}, 5); 
+    
+}
+else
+{
+    nextButton.addEventListener("click", triggerNext);
+    prevButton.addEventListener("click", triggerPrev);
+}
+}
+window.onresize = resize;
+
 
 function setPointers(){
     center.style.cursor = "pointer";
@@ -435,7 +451,9 @@ function addDetails(x)
     document.getElementById("detailsBackground").style.display="block";
     textDetails.innerHTML="<div id='description'><div>"+profShows.name_Of_Event[x]+"</div><div>"+profShows.details.time[x] +", "+ 
     profShows.details.venue[x]+"<br>"+ profShows.details.date[x]+"</div><div>"+profShows.description[x]+"</div></div>";
+    setTimeout(function(){document.getElementById("description").style.opacity=1;},5);   
 }
+
 //opening a particular profshow on click
 var c=0; //counter to prevent the function from running again and again if after opening a profshow user is clicking on i
 function open(){   
