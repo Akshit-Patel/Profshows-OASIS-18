@@ -68,6 +68,7 @@ img {
 	background: #232323;
 	height: 5vw;
 	overflow: hidden;
+	z-index:100;
 }
 
 
