@@ -1,48 +1,60 @@
 * {
-    color: black;
-    font-weight: bold;
+	color: black;
+	font-weight: bold;
 	font-family: 'Trajan Pro Regular';
 }
+b{
+	color:#b5aeae;
+}
+
 /*animation is container*/
 /*I have commited this code though its not completely responsive as i have given sizes according to vw now i hhave to figure out something which will change height 
-and width of circles according to screen aspect ratio.*/ 
+and width of circles according to screen aspect ratio.*/
 
 @font-face {
-    font-family: Chapaza;
-    src: url(Chapaza.ttf);
+	font-family: Chapaza;
+	src: url(Chapaza.ttf);
 }
+
 @font-face {
-    font-family: Ikaros;
-    src: url(Ikaros-Light.otf);
+	font-family: Ikaros;
+	src: url(Ikaros-Light.otf);
 }
+
 @font-face {
-    font-family: Roboto;
-    src: url(Roboto-Regular.ttf);
+	font-family: Roboto;
+	src: url(Roboto-Regular.ttf);
 }
+
 ::-webkit-scrollbar {
 	display: none;
-	}
+}
 
 body {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	background-image: radial-gradient(at 50% 52%,white,LIGHTgrey);
+	background-image: radial-gradient(at 50% 52%, white, LIGHTgrey);
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 img {
-    width: 16vw; height: 4.5vw; position: absolute; z-index: 15;
+	width: 16vw;
+	height: 4.5vw;
+	position: absolute;
+	z-index: 15;
 
 
 }
+
 .container {
-	margin: 10vh 4vw;
-	height: 80vh;
+	padding-left: 0vw;
+	padding-right: 0vw;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 
@@ -55,7 +67,7 @@ img {
 	align-items: flex-start;
 	background: #232323;
 	height: 5vw;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 
@@ -69,7 +81,9 @@ img {
 	text-align: center;
 	padding-right: 4.5vw;
 	letter-spacing: 2px;
+
 }
+
 .contactButton {
 	background-color: #232323;
 	font-size: 2.5vw;
@@ -79,15 +93,16 @@ img {
 	padding: 1vw;
 	text-align: center;
 }
+
 .contactButton:hover {
 	background-color: white;
 	color: #232323;
-   
- }
 
-.navButton{
+}
+
+.navButton {
 	position: absolute;
-	top: 20vh;
+	top: 80vh;
 	z-index: 5;
 	width: 3vw;
 	height: 5vw;
@@ -96,56 +111,63 @@ img {
 	transition: 0.5s;
 }
 
-.navButton:hover{
+.navButton:hover {
 	opacity: 1;
 }
 
-.animation{
+.animation {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;;
-    height: 100vh;
-    width: 100vw; 
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
 }
 
-.common{
+.common {
 	border-radius: 50%;
 	background-size: cover;
-    display: inline-block;
+	display: inline-block;
 }
 
-.img1{
+.img1 {
 	background-image: url("0.jpg");
-	background-size: cover;	
+	background-size: cover;
 }
-.img2{
+
+.img2 {
 	background-image: url("8.jpg");
 	background-size: cover;
 }
 
-.img3{
+.img3 {
 	background-image: url("1.jpg");
 	background-size: cover;
 }
 
-.img4{
+.img4 {
 	background-image: url("2.jpg");
 	background-size: cover;
 }
 
 .noSelect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	  -webkit-user-select: none; /* Safari */
-	   -khtml-user-select: none; /* Konqueror HTML */
-		 -moz-user-select: none; /* Firefox */
-		  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
 									supported by Chrome and Opera */
-  }
+}
 
-  
 
-#center{
+
+#center {
 	position: absolute;
 	width: 30vw;
 	height: 30vw;
@@ -157,12 +179,12 @@ img {
 	z-index: 1;
 	filter: grayscale(100%);
 }
-#center:hover
-{
+
+#center:hover {
 	filter: grayscale(0);
 }
 
-#left{ 
+#left {
 	position: absolute;
 	width: 25vw;
 	height: 25vw;
@@ -174,8 +196,9 @@ img {
 	z-index: 1;
 	filter: grayscale(100%);
 }
-#right{       
-    position: absolute;
+
+#right {
+	position: absolute;
 	top: 30vh;
 	left: 77vw;
 	width: 25vw;
@@ -186,8 +209,9 @@ img {
 	z-index: 1;
 	filter: grayscale(100%);
 }
-#float{
-/*	this element is at bottom*/
+
+#float {
+	/*	this element is at bottom*/
 	position: absolute;
 	top: 30vh;
 	left: 115vw;
@@ -203,10 +227,10 @@ img {
 	color: rgb(189, 10, 10);
 	font-size: 4vw;
 	position: absolute;
-	top: 0;
+	top: 5vh;
 	right: 1vw;
 	z-index: 15;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	transition: 0.5s;
 	display: none;
 }
@@ -215,25 +239,25 @@ img {
 	font-size: 5vw;
 }
 
-#previous{
-	left: 0;
-	position:absolute;
+#previous {
+	left: 29vw;
+	position: absolute;
 }
 
-#next{
+#next {
 	float: right;
-	right: 0;
-	position:absolute;
+	right: 30vw;
+	position: absolute;
 }
 
-.cursorChange{
+.cursorChange {
 	cursor: pointer;
 }
 
 #contactDetails {
 	background-color: rgba(0, 0, 0, 0.8);
-	width: 92vw;
-	height: 80vh;
+	width: 100vw;
+	height: 100vh;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -268,23 +292,23 @@ h4 {
 	color: white;
 	font-size: 1.8vw;
 	font-family: Roboto;
-	opacity:0;
+	opacity: 0;
 	transition: 1s;
 }
-.details h4
-{
-	color:black;
-	opacity:1;
+
+.details h4 {
+	color: black;
+	opacity: 1;
 }
 
 #closeContactDetails {
 	color: rgb(189, 10, 10);
 	font-size: 4vw;
 	position: absolute;
-	top: 0;
+	top: 5vh;
 	right: 1vw;
 	z-index: 15;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	transition: 0.5s;
 	display: none;
 }
@@ -298,13 +322,14 @@ a {
 	transition: 0.2s;
 	text-decoration: none;
 }
+
 a:hover {
 	color: rgb(189, 10, 10);
 }
 
 #detailsBackground {
-	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
-    background-blend-mode: multiply,multiply;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+	background-blend-mode: multiply, multiply;
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
@@ -313,65 +338,70 @@ a:hover {
 	z-index: 5;
 	display: none;
 }
-#textDetails
-{
+
+#textDetails {
 	position: absolute;
 	display: block;
 	width: 50vw;
 	height: 100vh;
 	right: 0;
 	top: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	padding: 4vw;
-	
+
 }
-#description
-{
+
+#description {
 	align-items: center;
 	left: 1.5vw;
 	top: 1vh;
 	position: relative;
 	color: white;
-	width:40vw;
+	width: 40vw;
 	text-align: center;
-	height:70vh;
+	height: 70vh;
 	opacity: 0;
 	transition: 1s;
 }
-#description div:first-child
-{
+
+#description div:first-child {
 	font-size: 4vw;
 	font-family: Chapaza;
 	color: white;
 	top: -5vh;
 }
-#description div:nth-child(2n)
-{  font-size: 2vw;
+
+#description div:nth-child(2n) {
+	font-size: 2vw;
 	color: white;
 	font-family: Chapaza;
-	padding-top:3vh;
+	padding-top: 3vh;
 
 }
-#description div:last-child
-{  font-size: 1.5vw;
-   color: white;
-   font-family: Roboto;
-   padding-top: 3vh;
-   overflow: scroll;
-   height:40vh;
+
+#description div:last-child {
+	font-size: 1.5vw;
+	color: white;
+	font-family: Roboto;
+	padding-top: 3vh;
+	overflow: scroll;
+	height: 40vh;
 }
 
 
 
 /*changes for mobile*/
-@media (max-width: 500px) 
-{    
+@media (max-width: 500px) {
+	b{
+		color: black;
+	}
 	.container {
 		margin: 0;
 		height: 100vh;
 		width: 100vw;
 		background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 	}
+
 	.contactButton {
 		position: absolute;
 		top: 92vh;
@@ -380,23 +410,27 @@ a:hover {
 		font-size: 3vw;
 		padding: 2vh;
 		background-image: url("contact button background.svg");
-		background-color: rgba(0,0,0,0);
+		background-color: rgba(0, 0, 0, 0);
 		background-size: cover;
 		transition: 0.5s;
 	}
+
 	.contactButton:hover {
 		color: white;
-		background-color: rgba(0,0,0,0);
+		background-color: rgba(0, 0, 0, 0);
 	}
+
 	.contactIcon {
 		font-size: 5vw;
 	}
+
 	.head {
 		height: 12vw;
 		background-image: url("head background.svg");
 		background-size: cover;
 		width: 100vw;
 	}
+
 	.header {
 		position: absolute;
 		top: 15vw;
@@ -404,41 +438,50 @@ a:hover {
 		padding: 0;
 		color: rgb(20, 5, 56);
 		font-size: 10vw;
-		
+
 	}
+
 	img {
 		top: 0;
 		left: 15vw;
 		width: 70vw;
 		height: 11vw;
 	}
+
 	.navButton {
 		top: 62vh;
 		width: 15vw;
 		height: 5vw;
 		opacity: 1;
 	}
+
 	#next {
-		left: 74vw;
+		left: 83.3vw;
 		z-index: 3;
-		transform: rotateY(180deg);
+
 	}
+
 	#previous {
 		left: 11vw;
 		z-index: 3;
 	}
+
 	h1 {
 		font-size: 6vw;
 	}
+
 	h2 {
 		font-size: 4vw;
 	}
+
 	h3 {
 		font-size: 5vw;
 	}
+
 	h4 {
 		font-size: 3vw;
 	}
+
 	#contactDetails {
 		width: 100vw;
 		height: 100vh;
@@ -446,95 +489,100 @@ a:hover {
 		top: 0;
 		left: 0;
 	}
+
 	#closeContactDetails {
 		position: absolute;
 		top: 1vh;
-		right: 1vw;
-		font-size: 7vw;
+		left: 88vw;
+		width: 5vw;
 		z-index: 15;
 	}
+
 	#closeContactDetails:hover {
 		font-size: 9vw;
 	}
+
 	#center {
 		filter: grayscale(0);
 		z-index: 3;
+
 	}
+
 	#right {
 		filter: grayscale(0);
 		z-index: 3;
 	}
+
 	#left {
 		filter: grayscale(0);
 		z-index: 3;
 	}
+
 	#float {
 		filter: grayscale(0);
 	}
-	
-	#detailsBackground
-	{
-	display: block;
-    background: transparent;
-	width: 75vw;
-	height: 37.5vh;
-	position: absolute;
-	top: 55vh;
-	left: 13vw;
-	z-index: 0;	
+
+	#detailsBackground {
+		display: block;
+		background: transparent;
+		width: 75vw;
+		height: 37.5vh;
+		position: absolute;
+		top: 55vh;
+		left: 13vw;
+		z-index: 0;
 	}
-	#textDetails
-	{
-	position: absolute;
-	display: block;
-	width: 75vw;
-	height: 37.5vh;
-	right: 0;
-	top:0;
-	padding:0;
-	background-color: transparent;
-	z-index: 0;
+
+	#textDetails {
+		position: absolute;
+		display: block;
+		width: 75vw;
+		height: 37.5vh;
+		right: 0;
+		top: 0;
+		padding: 0;
+		background-color: transparent;
+		z-index: 0;
 	}
-	#description
-	{
-	align-items: center;
-	left: 0vw;
-	top: 1.5vh;
-	position: relative;
-	color: white;
-	width: 75vw;
-	text-align: center;
-	height: 38vh;
-	padding-top:0;
-	z-index: 0;
+
+	#description {
+		align-items: center;
+		left: 0vw;
+		top: 1.5vh;
+		position: relative;
+		color: white;
+		width: 75vw;
+		text-align: center;
+		height: 38vh;
+		padding-top: 0;
+		z-index: 0;
 	}
-	 /* .detailsBackground:before {
+
+	/* .detailsBackground:before {
 	opacity: 0.0;
 	}   */
-	#description div:first-child
-	{
-	font-size: 8vw;
-	color: rgb(34, 31, 31);
-	top: -2vh;
-	font-weight: 400;
-	letter-spacing: 0.5px;
+	#description div:first-child {
+		font-size: 8vw;
+		color: rgb(34, 31, 31);
+		top: -2vh;
+		font-weight: 400;
+		letter-spacing: 0.5px;
 	}
-	#description div:nth-child(2n)
-	{ 
-	font-size: 3.5vw;
-	color: rgb(122, 120, 120);
-	padding-top:2vh;
-	letter-spacing: 1px;
+
+	#description div:nth-child(2n) {
+		font-size: 3.5vw;
+		color: rgb(122, 120, 120);
+		padding-top: 2vh;
+		letter-spacing: 1px;
 
 	}
-	#description div:last-child 
-	{  
-	font-size: 3vw;
-	color: rgb(34, 31, 31);
-	padding-top: 1vh;
-	overflow:scroll;
-	height: 17vh;
+
+	#description div:last-child {
+		font-size: 3vw;
+		color: rgb(34, 31, 31);
+		padding-top: 1vh;
+		overflow: scroll;
+		height: 17vh;
 
 	}
 }
-
